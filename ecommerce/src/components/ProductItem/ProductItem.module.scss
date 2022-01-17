@@ -1,0 +1,28 @@
+.image {
+    width: 60%;
+}
+
+.productInfo {
+    text-align: left;
+    padding-left: 20%;
+}
+#productName {
+    font-size: 0.8vw;
+}
+#productPrice {
+    font-size: 0.6vw;
+}
+#productVariants {
+    font-size: 0.6vw;
+}
+
+.sizeContainer {
+    display: flex;
+    justify-content: center;
+}
+.sizeOptions {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 50%;
+}

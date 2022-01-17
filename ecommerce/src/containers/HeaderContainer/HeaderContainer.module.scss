@@ -1,0 +1,29 @@
+.headerContainer {
+    display: flex;
+    margin: 20px;
+    height: 10vh;
+    background: rgb(126, 158, 184);
+}
+.headerLinkList {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: black;
+    text-decoration: none;
+    //NOTE: Need to change styling for links
+}
+
+.linkRed {
+    color: red;
+    font-weight: bold;
+}
+.image {
+    height: 80%;
+    object-fit: cover;
+    // NOTE: need to centre this logo somehow
+}
+
+.align_right {
+    align-content: flex-end;
+}

@@ -1,0 +1,21 @@
+.footerContainer {
+    background: lightgrey;
+    height: max-content;
+    padding: 1vw;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.columns {
+    text-align: start;
+    width: 15vw;
+}
+
+img {
+    width: 15vw;
+}

@@ -1,0 +1,35 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: flex-start;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: flex-start;
+}
+.priceTag {
+    font-weight: normal;
+}
+
+.image {
+    height: 80%;
+    width: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80vh;
+}
+
+.align_left {
+    text-align: left;
+}
+
+.dropdown {
+    font-size: larger;
+}
