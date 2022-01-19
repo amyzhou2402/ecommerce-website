@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 const ProductItem = ({
+    id,
     name = "error",
     price = 0,
     img,
@@ -27,7 +28,7 @@ const ProductItem = ({
             </div>
             <Router>
                 <p className={styles.productInfo} id={styles.productName}>
-                    <Link to={"/product/" + name}>{name}</Link>
+                    <Link to={"/product/" + id}>{name}</Link>
                 </p>
                 <p className={styles.productInfo} id={styles.productPrice}>
                     Price: AUD {"$" + price + ".00"}

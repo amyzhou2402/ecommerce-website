@@ -1,16 +1,34 @@
 //https://fontawesome.com/v6.0/docs/web/use-with/react/
 
 import styles from "./ProductDetail.module.scss";
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    solid,
-    regular,
-    brands,
-} from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
+import { useParams } from "react-router-dom";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//     solid,
+//     regular,
+//     brands,
+// } from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
 
 const ProductDetail = ({ name = "error", price = 0, img, fave = false }) => {
-    const [toggleFave, setToggleFave] = useState(fave);
+    // const [toggleFave, setToggleFave] = useState(fave);
+
+    const [productArray, setProductArray] = useState([]);
+    useEffect(() => {
+        readAll(setProductArray);
+    }, []);
+
+    const params = useParams();
+    const productID = params.productID;
+
+    console.log(productArray);
+
+    const findID = () => {
+        return productArray.find((object) => {
+            if (object.id == productID) {
+            }
+            return object;
+        });
+    };
 
     return (
         <div className={styles.grid}>
@@ -23,7 +41,7 @@ const ProductDetail = ({ name = "error", price = 0, img, fave = false }) => {
             </div>
 
             <div className={styles.align_left}>
-                <h2>Product Name</h2>
+                <h2>{findID()}</h2>
                 <h2 className={styles.priceTag}>Price </h2>
 
                 <form>
