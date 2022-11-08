@@ -13,8 +13,8 @@ Future Goals
 <br>
 
 # Reflection
-- Things I'd differently next time
-- What? Why? How?
+- Things I'd do differently next time
+  - What? Why? How?
 - Future goals / changes
 - What did you struggle with?
-- What? Why? How?
+  - What? Why? How?
